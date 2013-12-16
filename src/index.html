@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Your Page Title Here :)</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="style/app.css">
+	<link rel="stylesheet" href="http://host.coxmediagroup.com/ajc/digitalprojects/global/css/iFrame_Medley.css" type="text/css"/>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+  <div id="root" class="container">
+    <div class="sidebar">
+      <h3>Georgia High School Graduation Rates</h3>
+      <p>(Percentage of students graduating in four years in each category)</p>
+      <ul class="legand">
+        <li><img src="images/a.png"> 90% or greater</li>
+        <li><img src="images/b.png"> 80% to 89.9%</li>
+        <li><img src="images/c.png"> 70% to 79.9%</li>
+        <li><img src="images/d.png"> 60% to 69.9%</li>
+        <li><img src="images/f.png"> Less than 60%</li>
+        <li><img src="images/na.png"> No graduated students</li>
+      </ul>
+      <hr>
+      Student Category: <select id="choose_school_layer">
+        <option value="schoolwide">School Wide</option>
+        <option value="econ">Economically Disadvantaged</option>
+        <option value="dis">Students With Disabilities</option>
+        <option value="black">Black Students</option>
+        <option value="white">White Students</option>
+        <option value="hispanic">Hispanic Students</option>
+      </select>
+
+      <p>A trio of school districts in metro Atlanta – DeKalb, Atlanta Public Schools and Clayton – are graduating fewer than six in 10 black students, a stunning reality that flies in the face of the area’s reputation as a mecca of black accomplishment and affluence.</p>
+      <p>Among DeKalb, APS, Clayton, Fulton, Gwinnett and Cobb, no district has a black four-year graduation rate above Gwinnett’s 68 percent. Gwinnett’s black graduation rate is lower than the state’s overall graduate rate of 71.5 percent and far lower than the 79 percent of white Georgia students who graduate in four years. And Georgia’s overall graduation rate is among the lowest in the nation. </p>
+	<p><a href = "http://www.myajc.com/news/news/state-regional/black-graduation-rates-lag-far-behind-rate-of-whit/ncKcH/" > Read the rest of Wayne Washington's story, "Black graduation rates lag far behind rate of white students"</a></p>
+    </div>
+    <div id="map"></div>
+  </div>
+
+
+  <div class="hidden" id="scores">
+    <h3 id="name"></h3>
+    <p>District: <span id='district'></span></p>
+    <ul class="school_detail">
+      <li>School wide: <span id="schoolwide"></span>%</li>
+      <li>Economically Disadvantaged: <span id="econ"></span>%</li>
+      <li>Students With Disabilities: <span id="dis"></span>%</li>
+      <li>Black Students: <span id="black"></span>%</li>
+      <li>White Students: <span id="white"></span>%</li>
+      <li>Hispanic Students: <span id="hispanic"></span>%</li>
+    </ul>
+  </div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdS9pUMk6A2Aja2sqWtL8M-se6HPyOsks&sensor=false"></script>
+  <script src="scripts/lib/tabletop.js"></script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>
